@@ -113,7 +113,7 @@ function OfferBlock ({RestoService, totalPrice, items, orderCreated}) {
             <button
                 onClick={onGenerateOrder}
                 className="offer-block__btn btn "
-            >Оформить заказ</button>
+            >Order now</button>
         </div>
     )
 }

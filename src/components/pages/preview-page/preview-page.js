@@ -15,11 +15,7 @@ const PreviewPage = () => {
                 <div className="preview-page__info-text">
                     <h1 className="preview-page__info-title title">Welcome to Forky Fried</h1>
                     <p className="preview-page__info-descr">
-                        Наша компания имеет 1000 ресторанов по всему миру и занимается
-                        доставкой горячей еды на дом, но это не предел!
-                        Мы растем с каждым клиентом и расширяем охват стран, где 
-                        есть наши заведения, а также собственный ассортимент. 
-                        Закажи сейчас - будь сыт через час!
+                        Our company has 1000 restaurants around the world and is engaged in the delivery of hot food at home, but this is not the limit! We grow with each client and expand the coverage of the countries where our establishments are located, as well as our own assortment. Order now - be full in an hour!
                     </p>
                     <ul className="preview-page__info-contact-list contact-list">
                         <div className="contact-list__item">
@@ -35,7 +31,7 @@ const PreviewPage = () => {
             </div>
 
             <Link to="/menu" className="preview-page__btn btn btn_border">
-                Перейти в меню
+                Check our menu
             </Link>
         </div>
     )

@@ -1,0 +1,108 @@
+@import '../app/_var';
+@import './quantity.scss';
+
+.cart {
+    &__no-items {
+        margin-top: $section-space;
+        text-align: center;
+    }
+}
+.offer-table {
+    width: 100%;
+    background: $bg;
+    border-spacing: 10px;
+
+    // Table's body
+    &__item {
+        padding: 20px;
+    }
+
+    td {
+        text-align: center;
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+
+    // Table's header
+    &__header {
+        th {
+            padding: 15px 0;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        &-item {
+            &_preview {
+                width: 15%;
+            }
+
+            &_name {
+                width: 25%;
+            }
+
+            &_price-one {
+                width: 18%;
+            }
+
+            &_qtty {
+                width: 18%;
+            }
+
+            &_price-total {
+                width: 14%;
+            }
+
+            &_remove {
+                width: 10%;
+            }
+        }
+    }
+
+    &__img {
+        width: 200px;
+        height: 125px;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+    // Item name
+    &__name {
+        font-size: 25px;
+    }
+
+    // For centering blocks in table cell
+    &__block {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        &_left {
+            justify-content: left;
+        }
+    }
+}
+
+.offer-block {
+    background: $bg;
+    clip-path: polygon(0 0, 100% 0, 100% 48%, 95% 100%, 0 100%);
+
+    &__price {
+        text-align: center;
+        font-weight: inherit;
+        margin-bottom: 10px;
+    }
+
+    &__btn {
+        padding: 15px;
+        width: 100%;
+        background-color: #333;
+        // border-radius: 35px;
+        margin-bottom: 5px;
+    }
+}

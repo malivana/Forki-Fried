@@ -1,0 +1,19 @@
+@import "../app/var.scss";
+
+.menu {
+    padding: $section-space_top-bottom;
+    min-height: 100vh;
+    height: 100%;
+
+    &__title {
+        margin: $section-space_bottom;
+    }
+
+    &-list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        grid-gap: 30px;
+    }
+}

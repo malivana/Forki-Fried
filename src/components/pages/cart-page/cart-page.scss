@@ -1,0 +1,9 @@
+@import '../../app/var.scss';
+
+.cart {
+    padding: $section-space_top-bottom;
+    
+    &__title {
+        margin: $section-space_bottom;
+    }
+}

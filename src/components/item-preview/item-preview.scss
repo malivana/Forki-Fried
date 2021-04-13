@@ -1,0 +1,15 @@
+@import '../app/var.scss';
+
+.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(111.78deg, $brand_red 0%, $brand_orange 100%);
+
+    svg {
+        width: 36%;
+        height: 39%;
+    }
+}

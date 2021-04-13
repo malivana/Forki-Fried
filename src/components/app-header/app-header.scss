@@ -1,0 +1,51 @@
+@import '../app/_var.scss';
+
+@font-face {
+    font-family: 'Vegan Style';
+    src: url('./VeganStyle.ttf');
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+
+    // Background
+    &-wrapper {
+        background: linear-gradient(to bottom, #36393F, #21252B);
+    }
+    // Background
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        font-family: 'Vegan Style';
+        font-size: 10px;
+
+        // svg {
+        //     max-width: 50px;
+        //     max-height: 50px;
+        //     margin-right: 8px;
+        // }
+    }
+
+    &__nav {
+        display: flex;
+    }
+
+    &__link {
+        display: flex;
+        font-size: 15px;
+        color: #fff;
+        text-decoration: none;
+
+        // Spaces between links
+        & + & {
+            margin-left: 40px;
+        }
+    }
+    &__cart {
+        margin-right: 10px;
+    }
+}

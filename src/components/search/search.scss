@@ -1,0 +1,84 @@
+@import '../app/_var';
+
+.search {
+    position: relative;
+    width: 30%;
+    background: transparent;
+    font-size: 15px;
+
+    &__header {
+        position: relative;
+    }
+
+    &__input {
+        font-size: inherit;
+        color: #fff;
+        border: none;
+        background: none;
+        outline: none;
+        width: 100%;
+        height: 100%;
+        padding: 0 0 10px 20px;
+        border-bottom: 1px solid #fff;
+        border-radius: 10px;
+        transition: border .3s;
+
+        &::placeholder {
+            color: darken(#fff, 20%);
+        }
+
+        &:focus {
+            border-bottom: 1px solid $brand_orange
+        }
+        
+    }
+
+    &__submit {
+        position: absolute;
+        top: 0;
+        right: 20px;
+
+        font-size: 1em !important;
+
+        svg {
+            width: 1.25em;
+            height: 1.25em;
+        }
+    }
+
+    &__result {
+        width: 100%;
+        padding: 20px;
+        background: #fff;
+        position: absolute;
+        top: calc(100% + 5px);
+        left: 0;
+        z-index: 10;
+        box-shadow: 0px 0px 15px rgba(#000, 1);
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        color: #000;
+
+        & + & {
+            margin-top: 10px;
+        }
+    }
+
+    &__img {
+        margin-right: 10px;
+        min-width: 50px;
+        width: 50px;
+        height: 40px;
+        overflow: hidden;
+        border-radius: 25%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
